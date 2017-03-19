@@ -1,6 +1,6 @@
-// Import Bootstrap
+// Bootstrap
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 
-body {
-  background-color: white;
-}
+// Global Rules
+@import './src/scss/base/_variables';
+@import './src/scss/base/_base';

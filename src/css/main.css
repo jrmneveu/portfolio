@@ -5989,3 +5989,6 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 body {
   background-color: white; }
+
+.container {
+  max-width: 1060px; }
