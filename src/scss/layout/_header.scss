@@ -1,0 +1,59 @@
+header {
+  margin : 160px 0 0;
+  padding: 0 50px;
+
+  .welcome {
+    margin     : 0;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size  : calculateRem(25);
+    color      : $heather;
+  }
+
+  h1 {
+    margin     : 0;
+    font-weight: 300;
+    font-size  : calculateRem(32);
+    line-height: calculateRem(45);
+
+    .name {
+      color: $picton-blue;
+    }
+
+    .profession {
+      color: $cornflower-blue;
+    }
+  }
+
+  .presentation {
+    margin     : 0;
+    font-weight: 300;
+    font-size  : calculateRem(32);
+    line-height: calculateRem(45);
+  }
+
+  .current-work {
+    margin     : 40px 0 0;
+    font-weight: 400;
+    font-size  : calculateRem(20);
+    line-height: calculateRem(28);
+  }
+}
+
+// RESPONSIVE
+// Under lg size breakpoint
+@include media-breakpoint-down(lg) {
+  header {
+    .presentation br {
+      display: none;
+    }
+  }
+}
+
+// RESPONSIVE
+// Under xs size breakpoint
+@include media-breakpoint-down(xs) {
+  header {
+    margin-top: 70px;
+  }
+}

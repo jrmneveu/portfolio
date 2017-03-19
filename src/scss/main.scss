@@ -2,5 +2,9 @@
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 
 // Global Rules
+@import './src/scss/base/_helpers';
 @import './src/scss/base/_variables';
 @import './src/scss/base/_base';
+
+// Layout
+@import './src/scss/layout/_header';

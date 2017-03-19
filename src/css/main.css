@@ -5987,8 +5987,51 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
+.font-weight-semi-bold {
+  font-weight: 600; }
+
 body {
-  background-color: white; }
+  background-color: #FFFFFF;
+  font-family: 'Hind', sans-serif;
+  font-weight: 400;
+  color: #354A55; }
 
 .container {
   max-width: 1060px; }
+
+header {
+  margin: 160px 0 0;
+  padding: 0 50px; }
+  header .welcome {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 1.5625rem;
+    color: #B9C9D1; }
+  header h1 {
+    margin: 0;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2.8125rem; }
+    header h1 .name {
+      color: #3EB7EC; }
+    header h1 .profession {
+      color: #699CF1; }
+  header .presentation {
+    margin: 0;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2.8125rem; }
+  header .current-work {
+    margin: 40px 0 0;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.75rem; }
+
+@media (max-width: 1199px) {
+  header .presentation br {
+    display: none; } }
+
+@media (max-width: 575px) {
+  header {
+    margin-top: 70px; } }
