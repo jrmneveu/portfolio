@@ -5999,6 +5999,12 @@ body {
 .container {
   max-width: 1060px; }
 
+h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #BEBEBE; }
+
 header {
   margin: 160px 0 0;
   padding: 0 50px; }
@@ -6035,3 +6041,8 @@ header {
 @media (max-width: 575px) {
   header {
     margin-top: 70px; } }
+
+.works-galery {
+  background-color: #F8F8F8;
+  margin: 110px 0 0;
+  padding: 50px; }

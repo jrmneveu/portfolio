@@ -8,3 +8,10 @@ body {
 .container {
   max-width: $container-max-width;
 }
+
+h2 {
+  font-size     : calculateRem(16);
+  font-weight   : 400;
+  text-transform: uppercase;
+  color         : $silver;
+}
