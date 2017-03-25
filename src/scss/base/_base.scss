@@ -5,8 +5,9 @@ body {
   color           : $ebony-clay;
 }
 
-.container {
+.wrapper {
   max-width: $container-max-width;
+  margin   : auto;
 }
 
 h2 {
@@ -14,4 +15,5 @@ h2 {
   font-weight   : 400;
   text-transform: uppercase;
   color         : $silver;
+  margin        : 0;
 }
