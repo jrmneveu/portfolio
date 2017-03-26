@@ -53,7 +53,7 @@
 
     .content__pres {
       display   : block;
-      max-width : 280px;
+      max-width : 70%;
       max-height: 555px;
       margin    : 50px auto auto;
     }
@@ -83,6 +83,12 @@
         header {
           margin-top: 0;
         }
+      }
+    }
+
+    .works-galery__content {
+      .content__pres {
+        max-width: 50%;
       }
     }
   }

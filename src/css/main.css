@@ -6077,7 +6077,7 @@ header.introduction {
       line-height: 24px; }
     .works-galery .works-galery__content .content__pres {
       display: block;
-      max-width: 280px;
+      max-width: 70%;
       max-height: 555px;
       margin: 50px auto auto; }
 
@@ -6089,4 +6089,6 @@ header.introduction {
   .works-galery .works-galery__item:nth-child(2n+2) .works-galery__content {
     margin-left: 0; }
   .works-galery .works-galery__item:nth-child(2n+2) header {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .works-galery .works-galery__content .content__pres {
+    max-width: 50%; } }
