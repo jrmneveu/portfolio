@@ -20,10 +20,13 @@
   }
 
   .works-galery__content {
+    position  : relative;
+    top       : 0;
     background: $white;
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.10);
     padding   : 40px 40px 0;
     margin    : 20px 0 0;
+    transition: top .3s;
 
     header {
       display: flex;
@@ -32,12 +35,15 @@
     h3 {
       font-size  : calculateRem(20);
       font-weight: 600;
+      color      : $porcelain;
+      transition : color .3s;
     }
 
     .nbr-of-pics {
       font-size  : calculateRem(14);
       font-weight: 300;
-      color      : $heather;
+      color      : $porcelain;
+      transition : color .3s;
       margin     : 2px 0 0 10px;
     }
 
@@ -45,23 +51,102 @@
       p {
         margin     : 0;
         font-size  : calculateRem(18);
-        color      : $scorpion;
+        color      : $porcelain;
         font-weight: 300;
         line-height: 24px;
+        transition : color .3s;
       }
     }
 
     .content__pres {
-      display   : block;
-      max-width : 70%;
-      max-height: 555px;
-      margin    : 50px auto auto;
+      display : block;
+      position: relative;
+      width   : 100%;
+
+      .color {
+        display   : block;
+        max-width : 70%;
+        max-height: 555px;
+        margin    : 50px auto auto;
+      }
+
+      .bw {
+        position  : absolute;
+        bottom    : 0;
+        left      : 0;
+        right     : 0;
+        max-width : 70%;
+        max-height: 555px;
+        margin    : 50px auto auto;
+        opacity   : 1;
+        transition: opacity .3s;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      top   : -5px;
+
+      h3 {
+        color: $ebony-clay;
+      }
+
+      .nbr-of-pics {
+        color: $heather;
+      }
+
+      .content__description {
+        p {
+          color: $scorpion;
+        }
+      }
+
+      .content__pres {
+        .bw {
+          opacity: 0;
+        }
+      }
     }
   }
 }
 
 // RESPONSIVE
-// Under md size breakpoint
+@include media-breakpoint-down(md) {
+  .works-galery {
+    .works-galery__content {
+      cursor: pointer;
+
+      h3 {
+        color: $ebony-clay;
+      }
+
+      .nbr-of-pics {
+        color: $heather;
+      }
+
+      .content__description {
+        p {
+          color: $scorpion;
+        }
+      }
+
+      .content__pres {
+        margin: auto;
+
+        .bw {
+          opacity: 0;
+        }
+      }
+
+      &:hover {
+        position: relative;
+        top     : 0;
+      }
+    }
+  }
+}
+
+// RESPONSIVE
 @include media-breakpoint-down(sm) {
   .works-galery {
     .works-galery__item {
@@ -88,7 +173,18 @@
 
     .works-galery__content {
       .content__pres {
-        max-width: 50%;
+        max-width: 60%;
+      }
+    }
+  }
+}
+
+// RESPONSIVE
+@include media-breakpoint-down(xs) {
+  .works-galery {
+    .works-galery__content {
+      .content__pres {
+        max-width: 75%;
       }
     }
   }
