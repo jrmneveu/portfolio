@@ -2,6 +2,7 @@
   background-color: $alabaster;
   margin          : 110px 0 0;
   padding         : 50px;
+  border-radius   : 4px;
 
   .works-galery__item {
     padding: 0;
@@ -20,13 +21,14 @@
   }
 
   .works-galery__content {
-    position  : relative;
-    top       : 0;
-    background: $white;
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.10);
-    padding   : 40px 40px 0;
-    margin    : 20px 0 0;
-    transition: top .3s;
+    position     : relative;
+    top          : 0;
+    background   : $white;
+    border-radius: 4px;
+    box-shadow   : 0 0 20px 0 rgba(0,0,0,0.10);
+    padding      : 40px 40px 0;
+    margin       : 20px 0 0;
+    transition   : top .3s;
 
     header {
       display: flex;
@@ -182,7 +184,12 @@
 // RESPONSIVE
 @include media-breakpoint-down(xs) {
   .works-galery {
+    padding: 50px 25px;
+    margin : 75px 0 0;
+
     .works-galery__content {
+      margin: 10px 0 0;
+
       .content__pres {
         max-width: 75%;
       }

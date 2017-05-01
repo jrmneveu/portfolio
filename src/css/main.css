@@ -6203,6 +6203,7 @@ header.introduction {
     margin: 0;
     font-family: 'Merriweather', serif;
     font-weight: 300;
+    font-style: italic;
     font-size: 1.5625rem;
     color: #B9C9D1; }
   header.introduction h1 {
@@ -6226,17 +6227,27 @@ header.introduction {
     line-height: 1.75rem; }
 
 @media (max-width: 1199px) {
-  header .presentation br {
+  header.introduction .presentation br {
     display: none; } }
 
 @media (max-width: 575px) {
-  header {
-    margin-top: 70px; } }
+  header.introduction {
+    margin-top: 70px; }
+    header.introduction h1 {
+      font-size: 1.625rem;
+      line-height: 2.4375rem; }
+    header.introduction .presentation {
+      font-size: 1.625rem;
+      line-height: 2.4375rem; }
+    header.introduction .current-work {
+      font-size: 1.25rem;
+      line-height: 1.75rem; } }
 
 .works-galery {
   background-color: #F8F8F8;
   margin: 110px 0 0;
-  padding: 50px; }
+  padding: 50px;
+  border-radius: 4px; }
   .works-galery .works-galery__item {
     padding: 0; }
     .works-galery .works-galery__item:nth-child(2n+1) .works-galery__content {
@@ -6247,6 +6258,7 @@ header.introduction {
     position: relative;
     top: 0;
     background: #fff;
+    border-radius: 4px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
     padding: 40px 40px 0;
     margin: 20px 0 0;
@@ -6332,14 +6344,19 @@ header.introduction {
     max-width: 60%; } }
 
 @media (max-width: 575px) {
-  .works-galery .works-galery__content .content__pres {
-    max-width: 75%; } }
+  .works-galery {
+    padding: 50px 25px;
+    margin: 75px 0 0; }
+    .works-galery .works-galery__content {
+      margin: 10px 0 0; }
+      .works-galery .works-galery__content .content__pres {
+        max-width: 75%; } }
 
 .experiences {
   background-color: #F8F8F8;
   margin: 20px 0 0;
   padding: 50px;
-  margin-bottom: 200px; }
+  border-radius: 4px; }
   .experiences .experiences__list {
     list-style-type: none;
     margin: 25px 0 0;
@@ -6375,3 +6392,90 @@ header.introduction {
         letter-spacing: 3px;
         margin: 3px 0 0;
         color: #8C969B; }
+
+@media (max-width: 575px) {
+  .experiences {
+    padding: 50px 25px; }
+    .experiences .experiences__list {
+      margin: 10px 0 0; } }
+
+footer {
+  margin: 110px 0 150px;
+  padding: 0 50px; }
+  footer .stay-in-touch {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.5625rem;
+    color: #B9C9D1; }
+  footer .mail-me {
+    margin: 0;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2.8125rem; }
+    footer .mail-me a {
+      position: relative;
+      color: #9B8BE9;
+      text-decoration: none;
+      word-wrap: break-word; }
+      footer .mail-me a:visited {
+        color: #9B8BE9;
+        text-decoration: none; }
+      footer .mail-me a:hover {
+        cursor: pointer; }
+        footer .mail-me a:hover::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 8px;
+          display: inline-block;
+          height: 2px;
+          width: 100%;
+          border-bottom: 1px solid;
+          margin-top: 6px; }
+  footer .social-networks {
+    margin: 0;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2.8125rem; }
+    footer .social-networks a {
+      color: #354A55;
+      position: relative;
+      text-decoration: none; }
+      footer .social-networks a:visited {
+        text-decoration: none; }
+      footer .social-networks a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 8px;
+        display: inline-block;
+        height: 2px;
+        width: 100%;
+        border-bottom: 1px solid;
+        margin-top: 6px; }
+      footer .social-networks a:hover {
+        text-decoration: none;
+        color: #9B8BE9;
+        cursor: pointer; }
+  footer .the-end {
+    margin: 40px 0 0;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-style: italic; }
+
+@media (max-width: 575px) {
+  footer {
+    padding: 0 25px;
+    margin: 75px 0 100px; }
+    footer .stay-in-touch {
+      font-size: 1.25rem;
+      margin: 0 0 5px; }
+    footer .social-networks {
+      font-size: 1.625rem;
+      line-height: 2.4375rem; }
+    footer .mail-me {
+      font-size: 1.625rem;
+      line-height: 2.4375rem; } }

@@ -6,6 +6,7 @@ header.introduction {
     margin     : 0;
     font-family: 'Merriweather', serif;
     font-weight: 300;
+    font-style : italic;
     font-size  : calculateRem(25);
     color      : $heather;
   }
@@ -41,9 +42,8 @@ header.introduction {
 }
 
 // RESPONSIVE
-// Under lg size breakpoint
 @include media-breakpoint-down(lg) {
-  header {
+  header.introduction {
     .presentation br {
       display: none;
     }
@@ -51,9 +51,23 @@ header.introduction {
 }
 
 // RESPONSIVE
-// Under xs size breakpoint
 @include media-breakpoint-down(xs) {
-  header {
+  header.introduction {
     margin-top: 70px;
+
+    h1 {
+      font-size  : calculateRem(26);
+      line-height: calculateRem(39);
+    }
+
+    .presentation {
+      font-size  : calculateRem(26);
+      line-height: calculateRem(39);
+    }
+
+    .current-work {
+      font-size  : calculateRem(20);
+      line-height: calculateRem(28);
+    }
   }
 }
