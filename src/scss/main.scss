@@ -1,6 +1,9 @@
 // Bootstrap
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 
+// Chocolat
+@import './src/scss/vendor/chocolat';
+
 // Global Rules
 @import './src/scss/base/_helpers';
 @import './src/scss/base/_variables';
