@@ -6334,3 +6334,44 @@ header.introduction {
 @media (max-width: 575px) {
   .works-galery .works-galery__content .content__pres {
     max-width: 75%; } }
+
+.experiences {
+  background-color: #F8F8F8;
+  margin: 20px 0 0;
+  padding: 50px;
+  margin-bottom: 200px; }
+  .experiences .experiences__list {
+    list-style-type: none;
+    margin: 25px 0 0;
+    padding: 0; }
+    .experiences .experiences__list li {
+      padding: 0 0 0 20px;
+      margin: 0 0 20px;
+      border-left: 5px solid white; }
+      .experiences .experiences__list li:last-of-type {
+        margin: 0; }
+      .experiences .experiences__list li .experience__details {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap; }
+        .experiences .experiences__list li .experience__details h3 {
+          font-size: 1.125rem;
+          font-weight: 400;
+          color: #354A55;
+          margin: 0 5px 0 0; }
+        .experiences .experiences__list li .experience__details .role {
+          font-size: 1.125rem;
+          font-weight: 300;
+          margin: 0 10px 0 0; }
+        .experiences .experiences__list li .experience__details .description {
+          font-size: 1.125rem;
+          font-weight: 300;
+          font-style: italic;
+          color: #8C969B;
+          margin: 0; }
+      .experiences .experiences__list li .experience__date {
+        font-size: 0.6875rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin: 3px 0 0;
+        color: #8C969B; }
