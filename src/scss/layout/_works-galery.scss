@@ -1,6 +1,6 @@
 .works-galery {
   background-color: $alabaster;
-  margin          : 110px 0 0;
+  margin          : 10px 0 0;
   padding         : 50px;
   border-radius   : 4px;
 
@@ -185,7 +185,7 @@
 @include media-breakpoint-down(xs) {
   .works-galery {
     padding: 50px 25px;
-    margin : 75px 0 0;
+    margin : 10px 0 0;
 
     .works-galery__content {
       margin: 10px 0 0;

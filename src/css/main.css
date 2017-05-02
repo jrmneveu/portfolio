@@ -6232,7 +6232,8 @@ header.introduction {
 
 @media (max-width: 575px) {
   header.introduction {
-    margin-top: 70px; }
+    margin-top: 70px;
+    padding: 0 25px; }
     header.introduction h1 {
       font-size: 1.625rem;
       line-height: 2.4375rem; }
@@ -6243,9 +6244,56 @@ header.introduction {
       font-size: 1.25rem;
       line-height: 1.75rem; } }
 
-.works-galery {
+.currently {
   background-color: #F8F8F8;
   margin: 110px 0 0;
+  padding: 50px;
+  border-radius: 4px; }
+  .currently h2 {
+    margin-bottom: 20px; }
+  .currently .currently__work {
+    padding-left: 20px;
+    border-left: 5px solid white; }
+    .currently .currently__work p {
+      font-size: 1.125rem;
+      font-weight: 300;
+      margin: 0; }
+    .currently .currently__work .since {
+      color: #8C969B; }
+  .currently .external {
+    position: relative;
+    text-decoration: none;
+    color: #354A55; }
+    .currently .external:visited {
+      color: #354A55; }
+    .currently .external::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 6px;
+      display: inline-block;
+      height: 2px;
+      width: 100%;
+      border-bottom: 1px solid;
+      margin-top: 6px; }
+    .currently .external:hover {
+      color: #699CF1;
+      cursor: pointer; }
+
+@media (max-width: 767px) {
+  .currently .currently__work:nth-child(1) {
+    margin-bottom: 20px; } }
+
+@media (max-width: 575px) {
+  .currently {
+    margin: 75px 0 0;
+    padding: 50px 25px; }
+    .currently h2 {
+      margin-bottom: 10px; } }
+
+.works-galery {
+  background-color: #F8F8F8;
+  margin: 10px 0 0;
   padding: 50px;
   border-radius: 4px; }
   .works-galery .works-galery__item {
@@ -6346,7 +6394,7 @@ header.introduction {
 @media (max-width: 575px) {
   .works-galery {
     padding: 50px 25px;
-    margin: 75px 0 0; }
+    margin: 10px 0 0; }
     .works-galery .works-galery__content {
       margin: 10px 0 0; }
       .works-galery .works-galery__content .content__pres {
@@ -6354,7 +6402,7 @@ header.introduction {
 
 .experiences {
   background-color: #F8F8F8;
-  margin: 20px 0 0;
+  margin: 10px 0 0;
   padding: 50px;
   border-radius: 4px; }
   .experiences .experiences__list {

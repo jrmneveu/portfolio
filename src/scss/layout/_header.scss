@@ -54,6 +54,7 @@ header.introduction {
 @include media-breakpoint-down(xs) {
   header.introduction {
     margin-top: 70px;
+    padding   : 0 25px;
 
     h1 {
       font-size  : calculateRem(26);
