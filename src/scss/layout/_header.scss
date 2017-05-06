@@ -2,73 +2,82 @@ header.introduction {
   margin : 160px 0 0;
   padding: 0 50px;
 
-  .welcome {
-    margin     : 0;
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
-    font-style : italic;
-    font-size  : calculateRem(25);
-    color      : $heather;
-  }
-
   h1 {
     margin     : 0;
     font-weight: 300;
     font-size  : calculateRem(32);
     line-height: calculateRem(45);
 
-    .name {
-      color: $picton-blue;
-    }
-
-    .profession {
-      color: $cornflower-blue;
-    }
-  }
-
-  .presentation {
-    margin     : 0;
-    font-weight: 300;
-    font-size  : calculateRem(32);
-    line-height: calculateRem(45);
-  }
-
-  .current-work {
-    margin     : 40px 0 0;
-    font-weight: 400;
-    font-size  : calculateRem(20);
-    line-height: calculateRem(28);
-  }
-}
-
-// RESPONSIVE
-@include media-breakpoint-down(lg) {
-  header.introduction {
-    .presentation br {
+    br {
       display: none;
     }
   }
+
+  .working {
+    margin     : 0 0 0 -5px;
+    font-weight: 300;
+    font-size  : calculateRem(32);
+    line-height: calculateRem(45);
+
+    .working-link {
+      position       : relative;
+      text-decoration: none;
+
+      &:nth-child(1) {
+        color: $picton-blue;
+      }
+
+      &:nth-child(2) {
+        color: $cornflower-blue;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        &::after {
+          content      : '';
+          position     : absolute;
+          left         : 0;
+          bottom       : 2px;
+          display      : inline-block;
+          height       : 2px;
+          width        : 100%;
+          border-bottom: 1px solid;
+          margin-top   : 6px;
+        }
+      }
+    }
+  }
 }
 
 // RESPONSIVE
-@include media-breakpoint-down(xs) {
+@media screen and (max-width: 768px) {
   header.introduction {
-    margin-top: 70px;
-    padding   : 0 25px;
+    margin: 100px 0 0;
 
     h1 {
-      font-size  : calculateRem(26);
-      line-height: calculateRem(39);
+      font-size  : calculateRem(24);
+      line-height: calculateRem(37);
     }
 
-    .presentation {
-      font-size  : calculateRem(26);
-      line-height: calculateRem(39);
+    .working {
+      font-size  : calculateRem(24);
+      line-height: calculateRem(37);
     }
+  }
+}
 
-    .current-work {
-      font-size  : calculateRem(20);
-      line-height: calculateRem(28);
+// RESPONSIVE
+@media screen and (max-width: 425px) {
+  header.introduction {
+    margin: 50px 0 0;
+
+    h1 {
+      margin: 0 0 20px;
+
+      br {
+        display: block;
+      }
     }
   }
 }

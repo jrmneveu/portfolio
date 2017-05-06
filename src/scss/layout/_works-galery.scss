@@ -26,12 +26,13 @@
     background   : $white;
     border-radius: 4px;
     box-shadow   : 0 0 20px 0 rgba(0,0,0,0.10);
-    padding      : 40px 40px 0;
+    padding      : 40px 0 0;
     margin       : 20px 0 0;
     transition   : top .3s;
 
     header {
       display: flex;
+      padding: 0 40px;
     }
 
     h3 {
@@ -50,6 +51,8 @@
     }
 
     .content__description {
+      padding: 0 40px;
+
       p {
         margin     : 0;
         font-size  : calculateRem(18);
@@ -65,24 +68,50 @@
       position: relative;
       width   : 100%;
 
-      .color {
+      .color-center {
         display   : block;
-        max-width : 70%;
-        max-height: 555px;
+        min-width : 100px;
+        max-width : 100%;
+        max-height: 330px;
         margin    : 50px auto auto;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        transition: filter .3s;
       }
 
-      .bw {
-        position  : absolute;
-        bottom    : 0;
-        left      : 0;
-        right     : 0;
-        max-width : 70%;
-        max-height: 555px;
-        margin    : 50px auto auto;
-        opacity   : 1;
-        transition: opacity .3s;
+      .color-right {
+        display   : block;
+        max-width : 100%;
+        max-height: 330px;
+        margin    : 50px 0 0 auto;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        transition: filter .3s;
       }
+
+      // .bw-center {
+      //   position  : absolute;
+      //   bottom    : 0;
+      //   left      : 0;
+      //   right     : 0;
+      //   max-width : 70%;
+      //   max-height: 555px;
+      //   margin    : 50px auto auto;
+      //   opacity   : 1;
+      //   transition: opacity .3s;
+      // }
+      //
+      // .bw-right {
+      //   position  : absolute;
+      //   bottom    : 0;
+      //   left      : 0;
+      //   right     : 0;
+      //   max-width : 84%;
+      //   max-height: 555px;
+      //   margin    : 50px 0 auto auto;
+      //   opacity   : 1;
+      //   transition: opacity .3s;
+      // }
     }
 
     &:hover {
@@ -104,8 +133,17 @@
       }
 
       .content__pres {
-        .bw {
+        .bw-center {
           opacity: 0;
+        }
+
+        .bw-right {
+          opacity: 0;
+        }
+
+        .color-center {
+          -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
         }
       }
     }
@@ -135,7 +173,7 @@
       .content__pres {
         margin: auto;
 
-        .bw {
+        .bw-center {
           opacity: 0;
         }
       }
