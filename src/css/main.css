@@ -11,9 +11,9 @@
   left: 0;
   top: 0;
   z-index: 10;
-  background-color: #fff;
+  background-color: #000;
   display: none;
-  opacity: .95; }
+  opacity: .9; }
 
 .chocolat-wrapper {
   height: 100%;
@@ -115,7 +115,7 @@
   z-index: 17;
   padding-left: 15px;
   padding-right: 15px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.9);
   text-align: right;
   margin-top: 10px; }
 
@@ -277,8 +277,20 @@ header.introduction {
       margin-top: 2px; }
   .works-galery .works-galery__galery {
     display: none; }
-  .works-galery .lipi {
-    background: url("/src/img/ex.png");
+  .works-galery .weborama-background {
+    background: url("/src/img/weborama/pres-weborama.png");
+    background-size: cover;
+    background-position: center; }
+  .works-galery .lipi-background {
+    background: url("/src/img/lipi/pres-lipi.png");
+    background-size: cover;
+    background-position: center; }
+  .works-galery .food-background {
+    background: url("/src/img/food/pres-food.png");
+    background-size: cover;
+    background-position: center; }
+  .works-galery .pidc-background {
+    background: url("/src/img/pidc/pres-pidc.png");
     background-size: cover;
     background-position: center; }
   .works-galery .works-galery__popup {
@@ -308,7 +320,7 @@ header.introduction {
         max-width: 350px;
         margin: auto; }
         .works-galery .works-galery__popup .works-galery__popup-infos .popup__item-desc h2 {
-          margin: 0 0 10px;
+          margin: 0 0 14px;
           color: white;
           text-transform: uppercase;
           font-size: 1rem;
@@ -317,7 +329,15 @@ header.introduction {
         .works-galery .works-galery__popup .works-galery__popup-infos .popup__item-desc .popup__desc {
           margin: 0;
           color: #8C969B;
-          font-size: 1rem; }
+          font-size: 1rem;
+          font-weight: 400; }
+        .works-galery .works-galery__popup .works-galery__popup-infos .popup__item-desc .popup__desc-small {
+          margin: 3px 0 0;
+          color: #8C969B;
+          font-size: 0.75rem;
+          font-weight: 400;
+          text-transform: uppercase;
+          letter-spacing: 1px; }
     .works-galery .works-galery__popup:hover {
       opacity: 1;
       cursor: pointer; }
@@ -360,7 +380,7 @@ footer.index {
   footer.index .footer-title {
     text-transform: uppercase;
     font-size: 0.75rem;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0 12px 2px 0;
     color: #BEBEBE;
     letter-spacing: 1px; }

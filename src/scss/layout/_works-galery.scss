@@ -26,8 +26,26 @@
     display: none;
   }
 
-  .lipi {
-    background         : url('/src/img/ex.png');
+  .weborama-background {
+    background         : url('/src/img/weborama/pres-weborama.png');
+    background-size    : cover;
+    background-position: center;
+  }
+
+  .lipi-background {
+    background         : url('/src/img/lipi/pres-lipi.png');
+    background-size    : cover;
+    background-position: center;
+  }
+
+  .food-background {
+    background         : url('/src/img/food/pres-food.png');
+    background-size    : cover;
+    background-position: center;
+  }
+
+  .pidc-background {
+    background         : url('/src/img/pidc/pres-pidc.png');
     background-size    : cover;
     background-position: center;
   }
@@ -64,7 +82,7 @@
         margin   : auto;
 
         h2 {
-          margin        : 0 0 10px;
+          margin        : 0 0 14px;
           color         : white;
           text-transform: uppercase;
           font-size     : calculateRem(16);
@@ -73,9 +91,19 @@
         }
 
         .popup__desc {
-          margin   : 0;
-          color    : $oslo-gray;
-          font-size: calculateRem(16);
+          margin     : 0;
+          color      : $oslo-gray;
+          font-size  : calculateRem(16);
+          font-weight: 400;
+        }
+
+        .popup__desc-small {
+          margin        : 3px 0 0;
+          color         : $oslo-gray;
+          font-size     : calculateRem(12);
+          font-weight   : 400;
+          text-transform: uppercase;
+          letter-spacing: 1px;
         }
       }
     }
