@@ -1,6 +1,7 @@
 header.introduction {
-  margin : 160px 0 0;
-  padding: 0 50px;
+  max-width: $container-max-width;
+  margin   : 230px auto auto;
+  padding  : 0 50px;
 
   h1 {
     margin     : 0;
@@ -24,7 +25,7 @@ header.introduction {
       text-decoration: none;
 
       &:nth-child(1) {
-        color: $picton-blue;
+        color: $oslo-gray;
       }
 
       &:nth-child(2) {
@@ -70,7 +71,8 @@ header.introduction {
 // RESPONSIVE
 @media screen and (max-width: 425px) {
   header.introduction {
-    margin: 50px 0 0;
+    margin : 70px 0 0;
+    padding: 0 25px;
 
     h1 {
       margin: 0 0 20px;

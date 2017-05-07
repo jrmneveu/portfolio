@@ -5,11 +5,6 @@ body {
   color           : $ebony-clay;
 }
 
-.wrapper {
-  max-width: $container-max-width;
-  margin   : auto;
-}
-
 h2 {
   font-size     : calculateRem(16);
   font-weight   : 400;
