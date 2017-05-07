@@ -26,10 +26,18 @@ header.introduction {
 
       &:nth-child(1) {
         color: $picton-blue;
+
+        &:visited {
+          color: $picton-blue;
+        }
       }
 
       &:nth-child(2) {
         color: $cornflower-blue;
+
+        &:visited {
+          color: $cornflower-blue;
+        }
       }
 
       &:hover {
@@ -52,9 +60,28 @@ header.introduction {
 }
 
 // RESPONSIVE
+@media screen and (max-width: 1024px) {
+  header.introduction {
+    margin : 165px auto auto;
+    padding: 0 30px;
+
+    h1 {
+      font-size  : calculateRem(28);
+      line-height: calculateRem(41);
+    }
+
+    .working {
+      font-size  : calculateRem(28);
+      line-height: calculateRem(41);
+    }
+  }
+}
+
+// RESPONSIVE
 @media screen and (max-width: 768px) {
   header.introduction {
-    margin: 100px 0 0;
+    margin : 100px 0 0;
+    padding: 0 25px;
 
     h1 {
       font-size  : calculateRem(24);
@@ -69,17 +96,33 @@ header.introduction {
 }
 
 // RESPONSIVE
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   header.introduction {
-    margin : 70px 0 0;
-    padding: 0 25px;
-
     h1 {
-      margin: 0 0 20px;
+      margin: 100px 0 25px;
 
       br {
         display: block;
       }
+    }
+  }
+}
+
+// RESPONSIVE
+@media screen and (max-width: 375px) {
+  header.introduction {
+    margin : 50px 0 0;
+    padding: 0 25px;
+
+    h1 {
+      margin     : 0 0 10px;
+      font-size  : calculateRem(20);
+      line-height: calculateRem(33);
+    }
+
+    .working {
+      font-size  : calculateRem(20);
+      line-height: calculateRem(33);
     }
   }
 }

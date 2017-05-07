@@ -53,3 +53,62 @@ footer.index {
     }
   }
 }
+
+// RESPONSIVE
+@media screen and (max-width: 1024px) {
+  footer.index {
+    margin : 90px auto 165px;
+    padding: 0 30px;
+
+    .footer-title {
+      margin: 0 15px 2px 0;
+    }
+
+    .footer-social {
+      a {
+        margin: 0 8px 0 0;
+      }
+    }
+  }
+}
+
+// RESPONSIVE
+@media screen and (max-width: 768px) {
+  footer.index {
+    margin : 90px auto 165px;
+    padding: 0 25px;
+
+    .footer-title {
+      display: block;
+      margin : 0 15px 5px 0;
+    }
+
+    .footer-mail {
+      margin: 0 0 35px;
+    }
+
+    .footer-social {
+      a {
+        margin: 0 15px 0 0;
+      }
+    }
+  }
+}
+
+// RESPONSIVE
+@media screen and (max-width: 500px) {
+  footer.index {
+    .footer-social {
+      a {
+        line-height: calculateRem(35);
+      }
+    }
+  }
+}
+
+// RESPONSIVE
+@media screen and (max-width: 375px) {
+  footer.index {
+    margin: 35px auto 90px;
+  }
+}
