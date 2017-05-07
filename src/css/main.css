@@ -223,7 +223,7 @@ header.introduction {
       position: relative;
       text-decoration: none; }
       header.introduction .working .working-link:nth-child(1) {
-        color: #8C969B; }
+        color: #3EB7EC; }
       header.introduction .working .working-link:nth-child(2) {
         color: #699CF1; }
       header.introduction .working .working-link:hover {
@@ -269,7 +269,6 @@ header.introduction {
     position: relative;
     width: calc(50% - 1px);
     height: 500px;
-    background: lightgrey;
     border-radius: 4px; }
     .works-galery .works-galery__item:nth-child(2n) {
       margin-left: 2px; }
@@ -361,9 +360,6 @@ header.introduction {
     padding: 0 25px; }
     .works-galery .works-galery__item {
       height: 300px; } }
-
-.experiences {
-  margin: 150px 0 0; }
 
 footer.index {
   max-width: 1200px;
