@@ -302,19 +302,19 @@ header.introduction {
   .works-galery .works-galery__galery {
     display: none; }
   .works-galery .weborama-background {
-    background: url("/src/img/weborama/pres-weborama.png");
+    background: url("../img/weborama/pres-weborama.png");
     background-size: cover;
     background-position: center; }
   .works-galery .lipi-background {
-    background: url("/src/img/lipi/pres-lipi.png");
+    background: url("../img/lipi/pres-lipi.png");
     background-size: cover;
     background-position: center; }
   .works-galery .food-background {
-    background: url("/src/img/food/pres-food.png");
+    background: url("../img/food/pres-food.png");
     background-size: cover;
     background-position: center; }
   .works-galery .pidc-background {
-    background: url("/src/img/pidc/pres-pidc.png");
+    background: url("../img/pidc/pres-pidc.png");
     background-size: cover;
     background-position: center; }
   .works-galery .works-galery__popup {
