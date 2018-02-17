@@ -1,22 +1,15 @@
 {
-  "name": "Portfolio",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "Portfolio of Jérémy Neveu",
-  "main": "index.js",
+  "description": "Portfolio — Jérémy Neveu",
+  "main": "",
+  "dependencies": {},
   "devDependencies": {
-    "bootstrap": "^4.0.0-alpha.6",
-    "browser-sync": "^2.18.8",
+    "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jrmneveu/portfolio.git"
-  },
-  "author": "jrmneveu",
-  "license": "",
-  "bugs": {
-    "url": "https://github.com/jrmneveu/portfolio/issues"
-  },
-  "homepage": "https://github.com/jrmneveu/portfolio#readme"
+  "scripts": {},
+  "author": "Jérémy Neveu",
+  "license": ""
 }
