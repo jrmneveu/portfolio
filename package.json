@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Portfolio — Jérémy Neveu",
   "main": "",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^4.0.0"
+  },
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
