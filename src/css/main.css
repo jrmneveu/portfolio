@@ -390,29 +390,6 @@ mark,
   .blockquote-footer::before {
     content: "\2014 \00A0"; }
 
-.img-fluid {
-  max-width: 100%;
-  height: auto; }
-
-.img-thumbnail {
-  padding: 0.25rem;
-  background-color: #fff;
-  border: 1px solid #dee2e6;
-  border-radius: 0.25rem;
-  max-width: 100%;
-  height: auto; }
-
-.figure {
-  display: inline-block; }
-
-.figure-img {
-  margin-bottom: 0.5rem;
-  line-height: 1; }
-
-.figure-caption {
-  font-size: 90%;
-  color: #6c757d; }
-
 .container {
   width: 100%;
   padding-right: 15px;
@@ -1003,26 +980,92 @@ mark,
 
 body {
   color: black;
-  font-size: 36px; }
+  font-size: 1.2rem; }
 
 .wrapper {
-  margin-top: 160px; }
+  margin-top: 60px; }
 
 h1 {
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 1.2rem; }
 
 .currently-text {
-  margin-top: 120px; }
+  margin-top: 40px; }
+  .currently-text br {
+    display: none; }
 
 .activity-text {
-  margin-top: 40px; }
+  margin-top: 20px; }
+  .activity-text br {
+    display: none; }
 
 .email-text {
-  margin-top: 80px; }
+  margin-top: 40px; }
 
 .social-networks-text {
-  margin-top: 80px; }
+  margin-top: 40px; }
 
 .smiley-text {
-  margin-top: 120px;
-  margin-bottom: 180px; }
+  margin-top: 60px;
+  margin-bottom: 100px; }
+
+@media (min-width: 576px) {
+  body {
+    font-size: 1.6rem; }
+  .wrapper {
+    margin-top: 100px; }
+  h1 {
+    font-weight: 400;
+    font-size: 1.6rem; }
+  .currently-text {
+    margin-top: 80px; }
+  .activity-text {
+    margin-top: 40px; }
+  .email-text {
+    margin-top: 60px; }
+  .social-networks-text {
+    margin-top: 60px; }
+  .smiley-text {
+    margin-top: 80px;
+    margin-bottom: 120px; } }
+
+@media (min-width: 768px) {
+  body {
+    font-size: 2.125rem; }
+  .wrapper {
+    margin-top: 120px; }
+  h1 {
+    font-weight: 400;
+    font-size: 2.125rem; }
+  .currently-text {
+    margin-top: 100px; }
+  .activity-text {
+    margin-top: 30px; }
+  .email-text {
+    margin-top: 60px; }
+  .social-networks-text {
+    margin-top: 60px; }
+  .smiley-text {
+    margin-top: 100px;
+    margin-bottom: 140px; } }
+
+@media (min-width: 992px) {
+  .wrapper {
+    margin-top: 160px; }
+  .currently-text {
+    margin-top: 120px; }
+  .activity-text {
+    margin-top: 40px; }
+  .email-text {
+    margin-top: 80px; }
+  .social-networks-text {
+    margin-top: 80px; }
+  .smiley-text {
+    margin-top: 120px;
+    margin-bottom: 160px; } }
+
+@media (min-width: 1200px) {
+  .currently-text br {
+    display: inline; }
+  .activity-text br {
+    display: inline; } }

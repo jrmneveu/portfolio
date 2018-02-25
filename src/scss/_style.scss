@@ -1,33 +1,44 @@
 body {
   color: black;
-  font-size: 36px;
+  font-size: 1.2rem;
 }
 
 .wrapper {
-  margin-top: 160px;
+  margin-top: 60px;
 }
+
+//
 
 h1 {
   font-weight: 400;
+  font-size: 1.2rem;
 }
 
 .currently-text {
-  margin-top: 120px;
+  margin-top: 40px;
+
+  br {
+    display: none;
+  }
 }
 
 .activity-text {
-  margin-top: 40px;
+  margin-top: 20px;
+  
+  br {
+    display: none;
+  }
 }
 
 .email-text {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .social-networks-text {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .smiley-text {
-  margin-top: 120px;
-  margin-bottom: 180px;
+  margin-top: 60px;
+  margin-bottom: 100px;
 }

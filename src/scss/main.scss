@@ -1,4 +1,11 @@
+// Bootstrap
 @import "./src/scss/bootstrap";
 
-// Add Style
+// Style Sheet
 @import "./src/scss/style";
+
+// Responsive Style Sheet
+@import "./src/scss/styleSM";
+@import "./src/scss/styleMD";
+@import "./src/scss/styleLG";
+@import "./src/scss/styleXL";
