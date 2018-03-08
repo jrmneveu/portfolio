@@ -16,6 +16,21 @@
 
   .currently-text {
     margin-top: 100px;
+
+    a {
+      &:before {
+        width: 68px;
+        bottom: -6px;
+      }
+
+      &:hover {
+        text-decoration: none;
+        
+        &:before {
+          bottom: -12px;
+        }
+      }
+    }
   }
 
   .activity-text {

@@ -16,6 +16,23 @@
 
   .currently-text {
     margin-top: 80px;
+
+    a {
+      &:before {
+        width: 50px;
+        height: 8px;
+        left: -2px;
+        bottom: -5px;
+      }
+
+      &:hover {
+        text-decoration: none;
+        
+        &:before {
+          bottom: -9px;
+        }
+      }
+    }
   }
 
   .activity-text {

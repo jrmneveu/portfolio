@@ -991,6 +991,38 @@ h1 {
 
 .currently-text {
   margin-top: 40px; }
+  .currently-text a {
+    color: #FF7275;
+    position: relative; }
+    .currently-text a:before {
+      display: block;
+      content: ' ';
+      background-image: url("../img/underline-diatly-link-red.svg");
+      background-size: 100% 100%;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 2;
+      width: 40px;
+      height: 5px;
+      left: -2px;
+      bottom: -4px;
+      transition: bottom .2s; }
+    .currently-text a:visited {
+      color: #FF7275; }
+    .currently-text a:focus {
+      text-decoration: none;
+      color: black;
+      outline: none; }
+      .currently-text a:focus:before {
+        background-image: url("../img/underline-diatly-link-black.svg");
+        bottom: -12px; }
+    .currently-text a:hover {
+      text-decoration: none;
+      color: #000000; }
+      .currently-text a:hover:before {
+        background-image: url("../img/underline-diatly-link-black.svg");
+        bottom: -7px; }
   .currently-text br {
     display: none; }
 
@@ -1001,9 +1033,23 @@ h1 {
 
 .email-text {
   margin-top: 40px; }
+  .email-text a {
+    color: black;
+    outline: none; }
+    .email-text a:visited, .email-text a:hover {
+      color: black; }
+    .email-text a:focus {
+      text-decoration: underline; }
 
 .social-networks-text {
   margin-top: 40px; }
+  .social-networks-text a {
+    color: black;
+    outline: none; }
+    .social-networks-text a:visited, .social-networks-text a:hover {
+      color: black; }
+    .social-networks-text a:focus {
+      text-decoration: underline; }
 
 .smiley-text {
   margin-top: 60px;
@@ -1019,6 +1065,15 @@ h1 {
     font-size: 1.6rem; }
   .currently-text {
     margin-top: 80px; }
+    .currently-text a:before {
+      width: 50px;
+      height: 8px;
+      left: -2px;
+      bottom: -5px; }
+    .currently-text a:hover {
+      text-decoration: none; }
+      .currently-text a:hover:before {
+        bottom: -9px; }
   .activity-text {
     margin-top: 40px; }
   .email-text {
@@ -1039,6 +1094,13 @@ h1 {
     font-size: 2.125rem; }
   .currently-text {
     margin-top: 100px; }
+    .currently-text a:before {
+      width: 68px;
+      bottom: -6px; }
+    .currently-text a:hover {
+      text-decoration: none; }
+      .currently-text a:hover:before {
+        bottom: -12px; }
   .activity-text {
     margin-top: 30px; }
   .email-text {
@@ -1054,6 +1116,12 @@ h1 {
     margin-top: 160px; }
   .currently-text {
     margin-top: 120px; }
+    .currently-text a:before {
+      z-index: 2;
+      width: 69px;
+      height: 9px;
+      left: -3px;
+      bottom: -6px; }
   .activity-text {
     margin-top: 40px; }
   .email-text {
